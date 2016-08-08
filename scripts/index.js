@@ -47,8 +47,7 @@
                 version: 'v2.7' // or v2.1, v2.2, v2.3, ...
             });
             FB.ui({
-                method: 'share_open_graph',
-                action_type: 'og.likes',
+                method: 'share',
                 action_properties: JSON.stringify({
                     object: 'https://developers.facebook.com/docs/',
                 })
