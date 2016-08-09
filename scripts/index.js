@@ -8,11 +8,11 @@
             var progressSoFar = $(".progress-bar").progressbar("value");
             progressSoFar=1000-progressSoFar;
             if (progressSoFar > 0) {
-                $(".msg-text").html("$ " + progressSoFar);
-                $(".normal-text").html("still needed for this project");
+				$(".alert-info").html("<strong> $ "+ progressSoFar+"</strong>still needed for this project");              
             }
-            else
-                $(".msg-text").html("Thank you for your contribution");
+            else{
+                 $(".alert-info").html('');
+                $(".alert-info").html("Thank you for your contribution");}
         }
     });
 
@@ -47,7 +47,8 @@
                 version: 'v2.7' // or v2.1, v2.2, v2.3, ...
             });
             FB.ui({
-                method: 'share',
+                method: 'share_open_graph',
+                action_type: 'og.likes',
                 action_properties: JSON.stringify({
                     object: 'https://developers.facebook.com/docs/',
                 })
@@ -67,6 +68,10 @@
         });
     });
       
-
+    $(".save-share-content .share-text").mouseover(function(){
+		$(".fb-twitter-share").show();
+	}).mouseout(function(){
+		$(".fb-twitter-share").hide();
+	});
 
 });

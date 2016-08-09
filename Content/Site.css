@@ -5,35 +5,41 @@
     margin:auto;
 }
 
-main{
-    height:100%;
-    width:100%;
-}
-
 .container{
-    height: 90%;
-    width: 38%;
-    margin-left: 25%;
-    margin-right: 25%;
-    float: left;
-    margin-top: 2%;
+    height:80%;
+    width: 44%;
+	padding-top:20px;
 }
 
-.message-bar {
-    height: 12%;
-    width: 100%;
-    float: left;
-    border-radius: 6px;
+.alert{
+margin-bottom:0;
+}
+
+.alert-info {
+    color: white;
     background-color: #424242;
-}
-    
-
-.main-content{
-    height: 65%;
+    border-color: #424242;
     width: 100%;
+	font-size:1.8vw;
+}
+.progress{
+height:25px;
+}
+
+.progress-bar{
+background-color: #e9e9e9;
+}
+
+.ui-widget-header{
+border:none;
+}
+
+.row {
+     margin-right: 0px; 
+     margin-left: 0px; 
+     border: #DCDCDC solid 2px;
     float: left;
-    margin-top: 1%;
-    border: #DCDCDC solid 2px;
+	width:100%;
 }
 
 .arrow{
@@ -41,40 +47,9 @@ main{
     height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-top: 19px solid  #424242;
+    border-top: 15px solid  #424242;
     float: right;
     margin-right: 10%;
-}
-
-/*.arrow{
-    width: 3%;
-    height: 0;
-    padding-left: 3%;
-    padding-top: 3%;
-    overflow: hidden;
-    position: relative;
-    float: right;
-    margin-top: 13.5%;
-    margin-right: 7%;
-}*/
-/*.arrow:after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 0;
-    margin-left:-500px;
-    margin-top:-500px;  
-    border-left: 500px solid transparent;
-    border-right: 500px solid transparent;
-    border-top: 500px solid  #424242;
-}*/
-
-
-.progress-bar{
-    height: 6%;
-    width: 99.9%;
-    border:#DCDCDC solid 2px;
-    background-color: #FAFAFA;
 }
 
 .red{
@@ -87,31 +62,48 @@ main{
     font-weight:normal;
 }
 
+.col-xs-4 {
+    margin-top: 1px;
+    padding-bottom: 5px;
+}
+
+.col-sm-4{
+    border: black solid 1px;
+    border-radius: 4px;
+    vertical-align: middle;
+    padding-top: 10px;
+    font-size: 1.6vw;
+	margin-left:10%;
+	height: 8%;
+	margin-left:5%;
+	border: grey solid 1px;
+}
+
+.col-md-4{  
+    border-radius: 4px;
+    vertical-align: middle;
+    padding-top: 5px;
+    font-size: 1.6vw;
+    margin-left: 10%;
+    border: grey solid 1px;
+	height:10%
+}
+
 .text-line{
-    margin: 4%;
     font-size: 1.8vw;
-    font-family: fedra serif ;
+    font-family: fedra serif;
     width: 78%;
-    word-spacing:5px;
-    float:left;
-    margin-left:7.8%;
+    word-spacing: 5px;
+    float: left;
+    margin-left: 7.8%;
+    margin-top: 2%;
 }
 
 .main-content-text{
-    height: 45%;
+    height: 50%;
     width: 100%;
     float: left;
-}
-
-.main-content-box{
-    height: 20%;
-    width: 40%;
-   margin-top:5%;
-    float: left;
-    border:  #DCDCDC solid 2px;
-    margin-left: 8%;
-    margin-right: 5%;
-    border-radius: 8px;
+	border:black solid 1px;
 }
 
 .green{
@@ -125,26 +117,18 @@ main{
     font-size:1.8vw;
     font-weight:bold;
     color:white;
-    margin-top:4%;
     text-align:center;
     float:left;
     margin-left:10%;
+    height: 50%;
+    margin-top: 3%;
+    margin-left: 9.9%;
 }
 
 .normal-text{
     font-weight:normal;
     margin-left:1%;
     word-spacing:5px;
-}
-.text-center{
-    color:white;
-    text-align:center;
-    margin-top:11%;
-    font-size:2vw;
-    font-family:fedra serif;
-    font-weight:bold;
-    float:left;
-    margin-left:23%;
 }
 
 .main-content-msg{
@@ -165,8 +149,16 @@ main{
     font-family:fedra serif;
     color:#777777;
     margin:10%;
-    margin-top:6%;
+    margin-top:2%;
     font-weight:bold;   
+	padding-left:10%;
+	position:relative;
+}
+
+.save-share-container{
+    float:left;
+	width:100%;
+	position:relative;
 }
 
 /*ui-icon-closethick {
@@ -207,138 +199,34 @@ input{
 }
 
 .save-share-content{
-    margin-top: 6%;
+    margin-top: 4%;
     border:  #DCDCDC solid 2px;
     height: 10%;
     width: 45.6%;
     float: left;
     border-radius: 8px;
     margin-right: 7.23%;
-     background-color:#FAFAFA;
+    background-color:#FAFAFA;
+	position:relative;
 }
 
-@media only screen and (max-width: 768px){
-html{
-width:100%;
-max-width:100%;
-min-height:1024px;
-height:100%;
-margin:auto;
-padding:0;
+
+ .fb-twitter-share {
+    display: none;
+    position: relative;
+    height: 31px;
+    width: 60px;
+    float: right;
+    margin-right: 10%;
+    z-index: 100;
+    margin-top: -60px;
 }
 
-body{
-height:100%;
-width:100%;
-margin:auto;
-padding:0;
-}
-.container {
-    height: 600px;
-    width: 40%;
-    margin-left: 30%;
-    margin-right: 29%;
-    float: left;
-    margin-top: 32%;
-}
-.message-bar {
-    height: 8%;
-    width: 100%;
-    float: left;
-    border-radius: 6px;
-    background-color: #424242;
-}
-.msg-text {
-    font-size: 1.8vw;
-    font-weight: bold;
-    color: white;
-    margin-top: 5%;
-    text-align: center;
-    float: left;
-    margin-left: 10%;
-}
-.normal-text {
-    margin-left: 4%;
-}
-.main-content {
-    height: 252px;
-    width: 100%;
-    float: left;
-    margin-top: 1%;
-    border: #DCDCDC solid 2px;
+.fb-share,.twitter-share{
+z-index:100;
+float:left;
 }
 
-.main-content-text {
-    height: 113px;
-    width: 100%;
-    float: left;
-}
-.main-content-box {
-    height: 14%;
-    width: 36%;
-    margin-top: 5%;
-    float: left;
-    border: #DCDCDC solid 2px;
-    margin-left: 8%;
-    margin-right: 5%;
-    border-radius: 8px;
-}
-.currency {
-    color: #828282;
-    font-weight: bold;
-    margin-top: 7%;
-    font-size: 2vw;
-    font-family: fedra serif;
-    margin-left: 10%;
-    float: left;
-}
-.darkgrey {
-    color: #424242;
-    margin-left: 5%;
-}
 
-.main-content-msg {
-    width: 47%;
-    float: left;
-    color: #0EA0D6;
-    font-style: italic;
-    font-family: fedra serif;
-    margin-left: 8%;
-    font-size: 1.8vw;
-    margin-top: 6%;
-}
 
-.text-center {
-    color: white;
-    text-align: center;
-    margin-top: 10%;
-    font-size: 2vw;
-    font-family: fedra serif;
-    font-weight: bold;
-    float: left;
-    margin-left: 19%;
-}
-.save-share-content {
-    margin-top: 6%;
-    border: #DCDCDC solid 2px;
-    height: 6%;
-    width: 42.6%;
-    float: left;
-    border-radius: 8px;
-    /* margin-right: 7.23%; */
-    background-color: #FAFAFA;
-    margin-left: 5%;
-    margin-right: 2%;
-}
-.share-text, .save-text {
-    text-align: center;
-    font-size: 1.7vw;
-    float: left;
-    font-family: fedra serif;
-    color: #777777;
-    /* margin: 10%; */
-    margin-top: 6%;
-    font-weight: bold;
-    margin-left: 16%;
-}
-}
+
