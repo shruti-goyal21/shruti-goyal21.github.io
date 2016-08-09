@@ -68,10 +68,18 @@
         });
     });
       
-    $(".save-share-content .share-text").mouseover(function(){
+    $(".save-share-content .share-text").mouseenter(function(){
 		$(".fb-twitter-share").show();
-	}).mouseout(function(){
+	});
+	
+	$(".row").mouseenter(function(){
 		$(".fb-twitter-share").hide();
 	});
+	
+	$(".save-text").mouseenter(function(){
+		$(".fb-twitter-share").hide();
+	});
+	
+	
 
 });
